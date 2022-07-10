@@ -8,4 +8,9 @@ My Personal Website, that describes my interests and related things to what I do
 * `[] Fix the orientation`
 * `[] Add my social accounts links`
 
+## Website overview
+
+<img src="assets/overview.png"> 
+
+> Development stage (Alpha version)
 

@@ -10,7 +10,6 @@ My Personal Website, that describes my interests and related things to what I do
 
 ## Website overview
 
-<img src="assets/overview.png"> 
+![Image](assets/overview.png)
 
 > Development stage (Alpha version)
-

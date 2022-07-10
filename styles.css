@@ -1,0 +1,102 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+h1 {
+    font-size: medium;
+}
+
+body {
+    background-color: #282B3C;
+    font-style: normal;
+    font-family: sans-serif;
+    color: white;
+    display: table-cell;
+    font-size: small;
+}
+
+.title {
+    position: relative;
+    color: white;
+}
+
+.rotate-words {
+    display: inline;
+    margin-left: 5px;
+}
+
+.rotate-words span {
+    width: max-content;
+    position: absolute;
+    background-color: #fd5949;
+    padding-inline: 0px;
+    opacity: 0;
+    transform-origin: 10px 75%;
+    animation: rotateWords 16s var(--d) linear infinite;
+}
+
+@keyframes rotateWords {
+    5%          {opacity: 1;}
+    10%, 20%    {opacity: 1; transform: rotate(2deg);}
+    15%         {transform: rotate(-1deg);}
+    25%         {opacity: 0; transform: translateY(90px) rotate(10deg);}
+}
+
+.icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    border-radius: 50%;
+    outline: 2px solid white;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .20s;
+}
+
+.icon:hover {
+    outline-offset: 3px;
+}
+.icon:hover i {
+    animation: shake .20s;
+}
+
+.icon-instagram:hover {
+    background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    outline-color: #a02d76;
+}
+
+.icon-discord:hover {
+    background-color: #5865F2;
+    outline-color: #5865F2;
+}
+
+.icon-twitter:hover {
+    background-color: #1DA1F2;
+    outline-color: #1DA1F2;
+}
+
+.icon-github:hover {
+    background-image: radial-gradient(#1BF128, #1BF171, #07AA90);
+    outline-color: #07AA90;
+}
+
+@keyframes shake {
+    10%{transform: rotate(15deg);   }
+    20%{transform: rotate(-15deg);  }
+    30%{transform: rotate(15deg);   }
+    40%{transform: rotate(-15deg);  }
+}
